@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
+  metadataBase: new URL('https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "TechGadget Hub - Honest Tech Reviews & Recommendations",
     description: "Your trusted source for honest tech reviews and expert recommendations on the latest gadgets.",
-    url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000',
+    url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app',
     siteName: 'TechGadget Hub',
     locale: 'en_US',
     type: 'website',
