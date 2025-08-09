@@ -1,4 +1,7 @@
 {
+  "skewProtection": {
+    "maxAge": 3600
+  },
   "headers": [
     {
       "source": "/(.*)",
