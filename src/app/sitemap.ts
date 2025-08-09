@@ -1,42 +1,39 @@
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Use your specific Vercel deployment URL
-  const baseUrl = 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app'
-  
   return [
     {
-      url: baseUrl,
+      url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
-      url: `${baseUrl}/about`,
+      url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/reviews`,
+      url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app/reviews',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app/contact',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/privacy`,
+      url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app/privacy',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/terms`,
+      url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app/terms',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
