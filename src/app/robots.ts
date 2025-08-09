@@ -1,12 +1,17 @@
 import { MetadataRoute } from 'next'
  
 export default function robots(): MetadataRoute.Robots {
+  // Use the Vercel deployment URL or custom domain
+  const baseUrl = process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}` 
+    : 'http://localhost:3000'
+    
   return {
     rules: {
       userAgent: '*',
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://techgadgethub.com/sitemap.xml',
+    sitemap: `${baseUrl}/sitemap.xml`,
   }
 }

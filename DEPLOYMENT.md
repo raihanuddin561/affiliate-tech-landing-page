@@ -1,6 +1,13 @@
 # Vercel Deployment Guide
 
-## Prerequisites
+## Prerequ3. Configure project settings:
+   - Framework: **Next.js** (auto-detected)
+   - Build Command: `npm run build` (auto-detected)
+   - Output Directory: `.next` (auto-detected)
+   - Install Command: `npm install` (auto-detected)
+6. Click "Deploy"
+
+**Note**: No `vercel.json` configuration file is needed - Vercel automatically detects and optimizes Next.js applications with built-in skew protection and performance optimizations.
 - Private repository created on GitHub
 - Vercel account (free tier is sufficient)
 

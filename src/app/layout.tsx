@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://techgadgethub.com'), // Replace with your actual domain
+  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "TechGadget Hub - Honest Tech Reviews & Recommendations",
     description: "Your trusted source for honest tech reviews and expert recommendations on the latest gadgets.",
-    url: 'https://techgadgethub.com', // Replace with your actual domain
+    url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000',
     siteName: 'TechGadget Hub',
     locale: 'en_US',
     type: 'website',
