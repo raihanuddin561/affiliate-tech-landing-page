@@ -12,7 +12,6 @@ export default function Home() {
             </div>
             <nav className="hidden md:flex space-x-8">
               <Link href="/reviews" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Reviews</Link>
-              <a href="#categories" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Categories</a>
               <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">About</Link>
               <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</Link>
             </nav>
@@ -24,24 +23,26 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Discover the Latest <span className="text-blue-600 dark:text-blue-400">Tech Gadgets</span>
+            Find Your Perfect <span className="text-blue-600 dark:text-blue-400">Fitness Watch</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Your trusted source for honest reviews, detailed comparisons, and expert recommendations on the hottest tech gadgets. 
-            Find the perfect device that fits your needs and budget.
+            Discover the latest in fitness technology with honest reviews and expert recommendations. 
+            Currently featuring the most popular smartwatch with Alexa integration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#featured"
+              href="/reviews/smartwatch"
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors"
             >
-              Explore Featured Products
+              Read Smartwatch Review
             </a>
             <a
-              href="#categories"
-              className="bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 text-gray-900 dark:text-white font-semibold py-4 px-8 rounded-lg text-lg border border-gray-300 dark:border-gray-600 transition-colors"
+              href="https://amzn.to/4orr7Ds"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors"
             >
-              Browse Categories
+              Buy on Amazon
             </a>
           </div>
         </div>
@@ -50,36 +51,41 @@ export default function Home() {
       {/* Featured Products */}
       <section id="featured" className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Featured Tech Reviews</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Product Card 1 */}
-            <div className="bg-gray-50 dark:bg-slate-700 rounded-xl p-6 hover:shadow-xl transition-shadow">
-              <div className="aspect-video bg-gray-200 dark:bg-gray-600 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-gray-500 dark:text-gray-400">Product Image</span>
+          <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Our Featured Product</h3>
+          <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
+            {/* Smart Watch - Only Product */}
+            <div className="bg-gray-50 dark:bg-slate-700 rounded-xl p-6 hover:shadow-xl transition-shadow border-2 border-blue-200 dark:border-blue-700">
+              <div className="flex items-center justify-between mb-4">
+                <span className="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded text-xs font-semibold">
+                  FEATURED
+                </span>
+                <span className="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 px-2 py-1 rounded text-xs font-semibold">
+                  Amazon&apos;s Choice
+                </span>
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Latest Smartphones</h4>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">In-depth reviews of the newest smartphone releases, comparing features, performance, and value.</p>
-              <a href="#" className="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300">Read Reviews →</a>
-            </div>
-
-            {/* Product Card 2 */}
-            <div className="bg-gray-50 dark:bg-slate-700 rounded-xl p-6 hover:shadow-xl transition-shadow">
-              <div className="aspect-video bg-gray-200 dark:bg-gray-600 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-gray-500 dark:text-gray-400">Product Image</span>
+              <div className="aspect-video bg-gray-100 dark:bg-gray-600 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://m.media-amazon.com/images/I/61AP4d1AUgL._AC_SX466_.jpg"
+                  alt="Smart Watch with Alexa Built-In"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Gaming Accessories</h4>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Comprehensive guides to gaming keyboards, mice, headsets, and other essential gaming gear.</p>
-              <a href="#" className="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300">Explore Gaming →</a>
-            </div>
-
-            {/* Product Card 3 */}
-            <div className="bg-gray-50 dark:bg-slate-700 rounded-xl p-6 hover:shadow-xl transition-shadow">
-              <div className="aspect-video bg-gray-200 dark:bg-gray-600 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-gray-500 dark:text-gray-400">Product Image</span>
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Smart Watch with Alexa Built-In</h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Comprehensive review of this feature-packed smartwatch with Alexa, Bluetooth calls, and 120+ sports modes.</p>
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400 mr-2">
+                  <span className="text-lg">★★★★☆</span>
+                </div>
+                <span className="text-sm text-gray-600 dark:text-gray-300">4.5/5 (2,847 reviews)</span>
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Smart Home Devices</h4>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Smart speakers, security cameras, and automation devices to make your home more intelligent.</p>
-              <a href="#" className="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300">Smart Home Guide →</a>
+              <div className="flex justify-between items-center">
+                <a href="/reviews/smartwatch" className="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300 text-sm">
+                  Read Review →
+                </a>
+                <a href="https://amzn.to/4orr7Ds" target="_blank" rel="noopener noreferrer sponsored" className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-semibold px-3 py-1 rounded transition-colors">
+                  Buy on Amazon
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -88,16 +94,15 @@ export default function Home() {
       {/* Categories Section */}
       <section id="categories" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Product Categories</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {['Smartphones', 'Laptops', 'Audio', 'Gaming', 'Smart Home', 'Wearables', 'Cameras', 'Accessories'].map((category) => (
-              <div key={category} className="bg-white dark:bg-slate-800 p-6 rounded-lg text-center hover:shadow-lg transition-shadow cursor-pointer">
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 dark:text-blue-400 text-xl">📱</span>
-                </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white">{category}</h4>
+          <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Focus Category</h3>
+          <div className="flex justify-center">
+            <div className="bg-white dark:bg-slate-800 p-8 rounded-xl text-center hover:shadow-lg transition-shadow cursor-pointer border-2 border-blue-200 dark:border-blue-700">
+              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <span className="text-blue-600 dark:text-blue-400 text-2xl">⌚</span>
               </div>
-            ))}
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Fitness Wearables</h4>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Smart watches, fitness trackers, and health monitoring devices</p>
+            </div>
           </div>
         </div>
       </section>

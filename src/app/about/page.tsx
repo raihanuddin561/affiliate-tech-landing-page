@@ -28,8 +28,8 @@ export default function About() {
             About TechGadget Hub
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Your trusted companion in navigating the ever-evolving world of technology. 
-            We&apos;re passionate about helping you make informed decisions about your next tech purchase.
+            Your trusted guide for fitness wearable technology. 
+            We&apos;re passionate about helping you find the perfect smartwatch or fitness tracker for your active lifestyle.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Honest Reviews</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We provide unbiased, thorough reviews based on extensive testing and real-world usage scenarios.
+                We provide unbiased, thorough reviews of fitness wearables based on extensive testing and real-world usage.
               </p>
             </div>
             
@@ -53,7 +53,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Deep Analysis</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Our detailed comparisons and feature breakdowns help you understand what matters most.
+                Our detailed comparisons help you understand which fitness features and health tracking capabilities matter most.
               </p>
             </div>
             
@@ -63,7 +63,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Expert Guidance</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Get professional recommendations tailored to your specific needs and budget constraints.
+                Get professional recommendations for fitness wearables tailored to your health goals and activity level.
               </p>
             </div>
           </div>

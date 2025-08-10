@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TechGadget Hub - Honest Tech Reviews & Recommendations",
-  description: "Discover the latest tech gadgets with honest reviews, detailed comparisons, and expert recommendations. Find the perfect device that fits your needs and budget at TechGadget Hub.",
-  keywords: "tech reviews, gadget reviews, smartphone reviews, laptop reviews, gaming accessories, smart home devices, technology recommendations, product comparisons",
+  title: "TechGadget Hub - Fitness Wearable Reviews & Recommendations",
+  description: "Discover the best fitness smartwatches and wearables with honest reviews and expert recommendations. Find the perfect device for your health and fitness goals.",
+  keywords: "smartwatch reviews, fitness tracker reviews, wearable technology, health monitoring devices, smartwatch comparisons, fitness watch recommendations",
   authors: [{ name: "TechGadget Hub" }],
   creator: "TechGadget Hub",
   publisher: "TechGadget Hub",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "TechGadget Hub - Honest Tech Reviews & Recommendations",
-    description: "Your trusted source for honest tech reviews and expert recommendations on the latest gadgets.",
+    title: "TechGadget Hub - Fitness Wearable Reviews & Recommendations",
+    description: "Your trusted source for honest smartwatch and fitness wearable reviews and expert recommendations.",
     url: 'https://shopvibe-tech-aktc2m999-raihan-uddins-projects-2fcd2e9f.vercel.app',
     siteName: 'TechGadget Hub',
     locale: 'en_US',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "TechGadget Hub - Honest Tech Reviews & Recommendations",
-    description: "Your trusted source for honest tech reviews and expert recommendations on the latest gadgets.",
+    title: "TechGadget Hub - Fitness Wearable Reviews & Recommendations",
+    description: "Your trusted source for honest smartwatch and fitness wearable reviews and expert recommendations.",
   },
   robots: {
     index: true,
